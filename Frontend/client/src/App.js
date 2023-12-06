@@ -33,8 +33,7 @@ function App() {
   useEffect(() => {
     /*global google*/
     google.accounts.id.initialize({
-      client_id:
-        "235973845509-5fddgbhrq2qs29am82tsr7unpch77gms.apps.googleusercontent.com",
+      client_id: "235973845509-5fddgbhrq2qs29am82tsr7unpch77gms.apps.googleusercontent.com",
       callback: handleCallbackResponse,
     });
     google.accounts.id.renderButton(document.getElementById("signInDiv"), {
