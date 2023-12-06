@@ -31,6 +31,7 @@ export function GoogleLogin() {
 
   useEffect(() => {
     /*global google*/
+    // eslint-disable-next-line
     google.accounts.id.initialize({
       client_id: "235973845509-5fddgbhrq2qs29am82tsr7unpch77gms.apps.googleusercontent.com",
       callback: handleCallbackResponse,
@@ -39,7 +40,7 @@ export function GoogleLogin() {
       theme: "outline",
       size: "large",
     });
-    /*global google*/
+    // eslint-disable-next-line
     google.accounts.id.prompt();
   }, []);
 
@@ -49,7 +50,7 @@ export function GoogleLogin() {
       {Object.keys(user).length != 0 && (
         <button onClick={(e) => handleSignOutEvent(e)}>log uit</button>
       )}
-
+      
       {user && (
         <div>
           <img
