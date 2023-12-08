@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {}
+    "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {
+    "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
+        "projectUniqueName": "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
+        "projectPath": "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\MrFre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MrFre\\TestClient\\Backend\\obj\\",
+        "outputPath": "c:\\Users\\MrFre\\TestClient\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MrFre\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -45,6 +45,10 @@
             "Microsoft.AspNetCore.SignalR": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -70,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
