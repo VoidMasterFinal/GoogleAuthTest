@@ -7,7 +7,7 @@ const AppRoutes = [
     element: <Home />,
   },
   {
-    path: "/GoogleLogin",
+    path: "/Login",
     element: <GoogleLogin />,
   },
 ];

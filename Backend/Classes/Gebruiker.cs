@@ -5,6 +5,10 @@ public class Gebruiker
     
     public string GebruikerNaam { get; set; }
 
+    public string email { get; set; }
+
+    public string adres { get; set; }
+
     public string Discriminator { get; set; }
 
 
