@@ -56,7 +56,7 @@ export default function GoogleLogin(){
               <img
                 className="userImg"
                 src={user.picture}
-                onError={displayFallBackImage()}
+                onError={displayFallBackImage}
                 alt="user-image"
               />
               <h3>{user.name}</h3>

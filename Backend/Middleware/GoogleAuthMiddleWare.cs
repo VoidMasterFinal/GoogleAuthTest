@@ -27,6 +27,8 @@ public class GoogleAudienceMiddleware
         try
         {
             var payload = GoogleJsonWebSignature.ValidateAsync(idToken).Result;
+            //signature valideren(public key van google)
+            
 
             // Controleer of de "audience" overeenkomt met de verwachte waarde
             if (payload.Audience != _expectedAudience)
