@@ -1,5 +1,3 @@
-using ChatApp.Hubs;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Voeg services toe aan de container.
@@ -24,7 +22,5 @@ app.UseAuthorization();
 
 // Map controllers
 app.MapControllers();
-
-app.MapHub<ChatHub>("/chathub");
 
 app.Run();
