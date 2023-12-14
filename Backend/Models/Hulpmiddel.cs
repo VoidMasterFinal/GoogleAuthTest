@@ -7,8 +7,11 @@ namespace AccessibilityModels
         public int HulpmiddelId { get; set; }
 
         public string Naam { get; set; }
+
+        public int? ErvaringsdeskundigeId { get; set; } // Foreign Key
         
-        public ICollection<ErvaringsdeskundigeHulpmiddel> ErvaringsdeskundigeHulpmiddelen { get; set; }
+        public Ervaringsdeskundige Ervaringsdeskundige { get; set; }
+
 
     }
 

@@ -6,28 +6,28 @@ namespace AccessibilityModels
     public class Ervaringsdeskundige : Gebruiker
     {
         public string Postcode { get; set; }
-        
+
         public string Telefoonnummer { get; set; }
 
-        public string TypeBeperking { get; set; }
+        public string? TypeBeperking { get; set; }
 
-        public string Hulpmiddelen { get; set; }
-        
-        public string AandoeningOfZiekte { get; set; }
+        public string? AandoeningOfZiekte { get; set; }
 
         public string VoorkeurBenadering { get; set; }
 
         public bool MagCommercieelBenaderdWorden { get; set; }
 
-        public List<string> BeschikbareTijden { get; set; }
+        public List<DateTime> BeschikbareTijden { get; set; }
 
-        public string NaamVoogd { get; set; }
+        public string? NaamVoogd { get; set; }
 
-        public string EmailVoogd { get; set; }
+        public string? EmailVoogd { get; set; }
 
-        public string TelefoonnummerVoogd { get; set; }
+        public string? TelefoonnummerVoogd { get; set; }
 
-        public ICollection<ErvaringsdeskundigeHulpmiddel> ErvaringsdeskundigeHulpmiddelen { get; set; }
+        public List<OnderzoekDeelname>? OnderzoekDeelnames { get; set; }
+
+        public List<Hulpmiddel>? GebruikteHulpmiddelen { get; set; }
 
         public DateTime GeboorteDatum { get; set; }
 
