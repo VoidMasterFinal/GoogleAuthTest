@@ -8,8 +8,6 @@ namespace AccessibilityModels
 
         public string BedrijfsInformatie { get; set; }
 
-        public string Locatie { get; set; }
-
         public List<Onderzoek>? Onderzoeken { get; set; }
 
     }

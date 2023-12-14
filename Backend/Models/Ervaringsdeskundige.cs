@@ -5,9 +5,7 @@ namespace AccessibilityModels
 {
     public class Ervaringsdeskundige : Gebruiker
     {
-        public string Postcode { get; set; }
-
-        public string Telefoonnummer { get; set; }
+        
 
         public string? TypeBeperking { get; set; }
 
