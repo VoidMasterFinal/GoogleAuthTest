@@ -5,7 +5,9 @@ namespace AccessibilityModels
 {
     public class Ervaringsdeskundige : Gebruiker
     {
-        
+        public string Voornaam { get; set; }
+
+        public string Achternaam { get; set; }
 
         public string? TypeBeperking { get; set; }
 
@@ -25,7 +27,7 @@ namespace AccessibilityModels
 
         public List<OnderzoekDeelname>? OnderzoekDeelnames { get; set; }
 
-        public List<Hulpmiddel>? GebruikteHulpmiddelen { get; set; }
+        public List<ErvaringsdeskundigeHulpmiddel> GebruikteHulpmiddelen { get; set; }
 
         public DateTime GeboorteDatum { get; set; }
 

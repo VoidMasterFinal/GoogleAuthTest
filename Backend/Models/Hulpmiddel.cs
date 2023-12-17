@@ -8,9 +8,9 @@ namespace AccessibilityModels
 
         public string Naam { get; set; }
 
-        public int? ErvaringsdeskundigeId { get; set; } // Foreign Key
-        
-        public Ervaringsdeskundige Ervaringsdeskundige { get; set; }
+        public int? ErvaringsdeskundigeId { get; set; }
+
+        public List<ErvaringsdeskundigeHulpmiddel>? GebruiktDoorErvaringsdeskundigen { get; set; }
 
 
     }
