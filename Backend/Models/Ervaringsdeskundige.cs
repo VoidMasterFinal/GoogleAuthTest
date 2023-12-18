@@ -9,8 +9,6 @@ namespace AccessibilityModels
 
         public string Achternaam { get; set; }
 
-        public string? TypeBeperking { get; set; }
-
         public string? AandoeningOfZiekte { get; set; }
 
         public string VoorkeurBenadering { get; set; }
@@ -27,7 +25,10 @@ namespace AccessibilityModels
 
         public List<OnderzoekDeelname>? OnderzoekDeelnames { get; set; }
 
-        public List<ErvaringsdeskundigeHulpmiddel> GebruikteHulpmiddelen { get; set; }
+        public List<ErvaringsdeskundigeHulpmiddel>? GebruikteHulpmiddelen { get; set; }
+
+        public List<ErvaringsdeskundigeBeperking>? Beperkingen { get; set; }
+
 
         public DateTime GeboorteDatum { get; set; }
 

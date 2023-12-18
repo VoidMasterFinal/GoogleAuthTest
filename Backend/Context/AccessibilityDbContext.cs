@@ -16,7 +16,8 @@ public class AccessibilityDbContext : DbContext
     public DbSet<ChatBericht> ChatBerichten { get; set; }
     public DbSet<Hulpmiddel> Hulpmiddelen { get; set; }
     public DbSet<Onderzoek> Onderzoeken { get; set; }
-    public DbSet<ChatBericht> ChatBerichten { get; set; }
+    public DbSet<ErvaringsdeskundigeHulpmiddel> ErvaringsdeskundigeHulpmiddelen { get; set; }
+    public DbSet<OnderzoekDeelname> OnderzoekDeelnames { get; set; }
 
 
 

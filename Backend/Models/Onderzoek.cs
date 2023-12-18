@@ -22,7 +22,7 @@ namespace AccessibilityModels
 
         public Bedrijf UitvoerendBedrijf { get; set; }
 
-        public List<OnderzoekDeelname>? OnderzoekDeelnames { get; set; }
+        public List<OnderzoekDeelname>? OnderzoekDeelnemers { get; set; }
 
 
 
