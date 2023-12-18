@@ -12,17 +12,22 @@ namespace AccessibilityModels
 
         public DateTime Datum { get; set; }
 
-        public string Locatie { get; set; }
+        public string? Locatie { get; set; }
 
         public string Beloning { get; set; }
 
-        public string SoortOnderzoek { get; set; }
+        public string SoortOnderzoek { get; set; }//online of fysiek
 
         public string StatusDeelname { get; set; }
 
         public Bedrijf UitvoerendBedrijf { get; set; }
 
         public List<OnderzoekDeelname>? OnderzoekDeelnemers { get; set; }
+
+        public string? TypeBeperking { get; set; }
+        public string? PostcodeCriteria { get; set; }
+        public int? MinLeeftijd { get; set; }
+        public int? MaxLeeftijd { get; set; }
 
 
 

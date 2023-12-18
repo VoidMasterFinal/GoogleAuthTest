@@ -29,6 +29,8 @@ namespace AccessibilityModels
 
         public List<ErvaringsdeskundigeBeperking>? Beperkingen { get; set; }
 
+        public List<Interesse>? GetoondeInteresses { get; set; }
+
 
         public DateTime GeboorteDatum { get; set; }
 

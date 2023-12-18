@@ -4,9 +4,11 @@ namespace AccessibilityModels
     {
               public int Id { get; set; }
         public string BerichtInhoud { get; set; }
+
         public DateTime Tijdstempel { get; set; }
 
         public int AfzenderId { get; set; }
+
         public int OntvangerId { get; set; }
 
         public Ervaringsdeskundige AfzenderErvaringsdeskundige { get; set; }
