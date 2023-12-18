@@ -24,6 +24,8 @@ namespace AccessibilityModels
 
         public List<OnderzoekDeelname>? OnderzoekDeelnemers { get; set; }
 
+        public List<Interesse>? GeinteresseerdeErvaringsdeskundigen { get; set; }
+
         public string? TypeBeperking { get; set; }
         public string? PostcodeCriteria { get; set; }
         public int? MinLeeftijd { get; set; }
