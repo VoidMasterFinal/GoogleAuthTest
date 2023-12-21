@@ -33,10 +33,10 @@ public class AccessibilityDbContext : DbContext
             .HasKey(g => g.GebruikerId);
 
         modelBuilder.Entity<Ervaringsdeskundige>()
-            .HasKey(e => e.ErvaringsdeskundigeId);
+            .HasBaseType<Gebruiker>();
 
         modelBuilder.Entity<Bedrijf>()
-            .HasKey(b => b.BedrijfId);
+            .HasBaseType<Gebruiker>();
 
         modelBuilder.Entity<ChatBericht>()
             .HasKey(c => c.ChatBerichtId);
