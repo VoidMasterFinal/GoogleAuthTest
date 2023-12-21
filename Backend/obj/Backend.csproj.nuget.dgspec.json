@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {}
+    "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {
+    "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "c:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
+        "projectPath": "C:\\Users\\MrFre\\TestClient\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\MrFre\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MrFre\\TestClient\\Backend\\obj\\",
+        "outputPath": "C:\\Users\\MrFre\\TestClient\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MrFre\\AppData\\Roaming\\NuGet\\NuGet.Config"

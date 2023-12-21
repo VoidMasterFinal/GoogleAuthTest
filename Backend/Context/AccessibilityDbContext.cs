@@ -24,8 +24,6 @@ public class AccessibilityDbContext : DbContext
 
 
 
-
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
