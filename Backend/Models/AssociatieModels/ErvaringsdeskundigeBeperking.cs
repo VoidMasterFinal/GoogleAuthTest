@@ -2,6 +2,9 @@ namespace AccessibilityModels{
 
 public class ErvaringsdeskundigeBeperking
 {
+
+    public int ErvaringsdeskundigeBeperkingId { get; set; }
+
     public int ErvaringsdeskundigeId { get; set; }
     public Ervaringsdeskundige Ervaringsdeskundige { get; set; }
 
