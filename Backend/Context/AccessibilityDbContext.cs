@@ -50,7 +50,14 @@ public class AccessibilityDbContext : DbContext
         modelBuilder.Entity<Beperking>()
             .HasKey(b => b.BeperkingId);
 
-        
+        modelBuilder.Entity<ErvaringsdeskundigeBeperking>().HasNoKey();
+
+        modelBuilder.Entity<ErvaringsdeskundigeHulpmiddel>().HasNoKey();
+
+        modelBuilder.Entity<OnderzoekDeelname>().HasNoKey();
+
+        modelBuilder.Entity<Interesse>().HasNoKey();
+
         modelBuilder.Entity<Interesse>()
             .HasOne(i => i.Ervaringsdeskundige)
             .WithMany(e => e.GetoondeInteresses)
