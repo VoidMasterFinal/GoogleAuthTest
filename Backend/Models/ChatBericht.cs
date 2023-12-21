@@ -2,7 +2,8 @@ namespace AccessibilityModels
 {
     public class ChatBericht
     {
-              public int Id { get; set; }
+        public int ChatBerichtId { get; set; }
+
         public string BerichtInhoud { get; set; }
 
         public DateTime Tijdstempel { get; set; }

@@ -4,7 +4,7 @@ namespace AccessibilityModels
     {
 
         // Algemene eigenschappen voor alle gebruikers
-        public int Id { get; set; }
+        public int GebruikerId { get; set; }
 
         public string Adres { get; set; }
 
