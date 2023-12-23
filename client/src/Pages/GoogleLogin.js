@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { jwtDecode } from "jwt-decode";
+import styles from '../styles/GoogleLogin.module.css'
+import GuestBar from './Bars/GuestBar';
+import ContactGegevens from './Bars/ContactGegevensBar'
 
 export default function GoogleLogin(){
-
     function displayFallBackImage() {
         // Use document.querySelector to find the element with the class 'userImg'
         var userImgElement = document.querySelector(".userImg");
@@ -38,31 +40,57 @@ export default function GoogleLogin(){
         });
         google.accounts.id.renderButton(document.getElementById("signInDiv"), {
           theme: "outline",
-          size: "large",
+          width: 500,
         });
         /*global google*/
         google.accounts.id.prompt();
       }, []);
     
       return (
-        <div className="App">
-          <div id="signInDiv"></div>
-          {Object.keys(user).length != 0 && (
+        <>
+        <GuestBar>
+        </GuestBar>
+        <img id={styles.wachtkamer_img} src="/Images/wachtkamer_plant.png" alt="Wachtkamer Achtergrond"/>
+      <div>
+        <h1 id={styles.login_title}>Login</h1>
+        <div id={styles.blok_1}>
+
+
+        <div id="google_login" className={styles.google_login}>
+          <div id="signInDiv" alt="Google Login"></div>
+          {Object.keys(user).length !== 0 && (
             <button onClick={(e) => handleSignOutEvent(e)}>log uit</button>
           )}
     
           {user && (
             <div>
-              <img
+              {/* <img
                 className="userImg"
                 src={user.picture}
                 onError={displayFallBackImage()}
                 alt="user-image"
               />
-              <h3>{user.name}</h3>
+              <h3>{user.name}</h3> */}
             </div>
           )}
         </div>
+
+        <hr id={styles.or_line}></hr>
+        <h3 id={styles.or_text}>OR</h3>
+          <div id={styles.username_blok}>
+            <h3 id={styles.username_text}>Username:</h3>
+            <input type="text" id={styles.username_input} autoFocus/>
+          </div>
+          <div id={styles.password_blok}>
+            <h3 id={styles.password_text}>Password:</h3>
+            <input type="text" id={styles.password_input}/>
+          </div>
+          <button href="/" id={styles.login_button}>Login</button>
+        </div>
+      </div>
+        <ContactGegevens>
+        </ContactGegevens>
+        </>
       );
 
 }
