@@ -22,7 +22,7 @@ export default function GuestBar() {
                     <a href="/Googlelogin" class={styles.button}>Login</a>
                 </li>
                 <li class={styles.navbar__item}>
-                    <a href="/signup" class={styles.button}>Sign In</a>
+                    <a href="/Register" class={styles.button}>Sign Up</a>
                 </li>
             </ul>
         </div>
