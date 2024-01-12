@@ -5,7 +5,7 @@ export default function UserBar() {
   return (
     <nav class={styles.navbar}>
         <div class={styles.navbar__container}>
-            <a href="/" id={styles.navbar__logo}><img src="/Images/logo_accessibility.png " alt="Accessibility Logo"/></a>
+            <a href="/UserHome" id={styles.navbar__logo}><img src="/Images/logo_accessibility.png " alt="Accessibility Logo"/></a>
             <div class={styles.navbar__toggle} id={styles.mobile_menu}>
                 <span class={styles.bar}></span>
                 <span class={styles.bar}></span>

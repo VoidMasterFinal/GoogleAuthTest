@@ -35,17 +35,17 @@ export default function UserHome() {
     {
       id: 'OnderzoekenButton',
       name: 'Actieve Onderzoeken',
-      link: '/onderzoeken'
+      link: '/Onderzoeken'
     },
     {
       id: 'ChatsButton',
       name: 'Jouw Chats',
-      link: '/chats',
+      link: '/Chats',
     },
     {
       id: 'GegevensButton',
       name: 'Gegevens (Wijzigen)',
-      link: '/gegevens',
+      link: '/Gegevens',
     },
     {
       id: 'LogoutButton',
