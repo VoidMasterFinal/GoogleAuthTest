@@ -4,6 +4,7 @@ import UserHome from './Pages/UserHome'
 import Register from './Pages/Register'
 import Onderzoeken from './Pages/Onderzoeken'
 import GedetaileerdOnderzoek from './Pages/GedetaileerdOnderzoek'
+import Gegevens from './Pages/Gegevens'
 
 const AppRoutes = [
   {
@@ -29,7 +30,12 @@ const AppRoutes = [
   {
     path: "/Onderzoek",
     element: <GedetaileerdOnderzoek />,
+  },
+  {
+    path: "/Gegevens",
+    element: <Gegevens />,
   }
+
 ];
 
 export default AppRoutes;
