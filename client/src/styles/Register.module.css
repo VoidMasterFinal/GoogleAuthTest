@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('Fonts/roboto/Roboto-Black.ttf');
+}
+
 #wachtkamer_img {
     width: 100%;
     height: 50vh;
@@ -8,6 +13,7 @@
     margin-top: 5%;
     text-align: center;
     font-size: 65px;
+    font-family: myFirstFont;
 }
 
 #blok_1 {
@@ -75,6 +81,7 @@
 #voornaam_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #voornaam_input {
@@ -88,6 +95,7 @@
 #achternaam_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #achternaam_input {
@@ -101,6 +109,7 @@
 #username_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #username_input {
@@ -114,6 +123,7 @@
 #email_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #email_input {
@@ -127,6 +137,7 @@
 #telnr_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #telnr_input {
@@ -140,6 +151,7 @@
 #postcode_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #postcode_input {
@@ -167,7 +179,7 @@
     border-color: transparent;
     width: 15%;
     height: 100%;
-    
+    font-family: myFirstFont;
 }
 
 #addbeperking:hover {
@@ -242,7 +254,7 @@
     border-color: transparent;
     width: 15%;
     height: 100%;
-    
+    font-family: myFirstFont;
 }
 
 #addhulpmiddel:hover {
@@ -301,6 +313,7 @@
     text-align: center;
     margin-top: 10vh;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #checkbox1 {
@@ -345,6 +358,7 @@
     text-align: center;
     margin-top: 10vh;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #commercieel_option1 {
@@ -361,6 +375,7 @@
 #password_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #password_input {
@@ -374,6 +389,7 @@
 #confirmpassword_text {
     margin: 1%;
     font-size: 200%;
+    font-family: myFirstFont;
 }
 
 #confirmpassword_input {

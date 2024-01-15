@@ -152,32 +152,32 @@ const [inputValue2, setInputValue2] = useState('');
         {/* <h3 id={styles.or_text}>OR</h3> */}
           <div id={styles.voornaam_blok}>
             <h3 id={styles.voornaam_text}>Voornaam:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.voornaam_input} autoFocus/>
+            <input aria-label="Voornaam invoer" placeholder="" class={styles.input} type="text" id={styles.voornaam_input} autoFocus/>
           </div>
           <div id={styles.achternaam_blok}>
             <h3 id={styles.achternaam_text}>Achternaam:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.achternaam_input}/>
+            <input aria-label="Achternaam invoer" placeholder="" class={styles.input} type="text" id={styles.achternaam_input}/>
           </div>
           <div id={styles.username_blok}>
             <h3 id={styles.username_text}>Username:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.username_input}/>
+            <input aria-label="Username invoer" placeholder="" class={styles.input} type="text" id={styles.username_input}/>
           </div>
           <div id={styles.email_blok}>
             <h3 id={styles.email_text}>Email:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.email_input}/>
+            <input aria-label="Email invoer" placeholder="" class={styles.input} type="text" id={styles.email_input}/>
           </div>
           <div id={styles.telnr_blok}>
             <h3 id={styles.telnr_text}>Telefoonnummer:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.telnr_input}/>
+            <input aria-label="Telefoonnummer invoer" placeholder="" class={styles.input} type="text" id={styles.telnr_input}/>
           </div>
           <div id={styles.postcode_blok}>
             <h3 id={styles.postcode_text}>Postcode:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.postcode_input}/>
+            <input aria-label="Postcode invoer" placeholder="" class={styles.input} type="text" id={styles.postcode_input}/>
           </div>
 
           <div id={styles.beperkinginvoerdiv}>
-            <button id={styles.addbeperking} onClick={addbeperkingToList}>+</button>
-            <input type="text" id={styles.beperking_input} className="beperking_input" placeholder="Voeg beperking toe" value={inputValue} maxlength="60" onChange={(e) => setInputValue(e.target.value)}/>
+            <button aria-label="Knop, voeg ingevoerde beperking toe" id={styles.addbeperking} onClick={addbeperkingToList}>+</button>
+            <input aria-label="Beperking invoer" type="text" id={styles.beperking_input} className="beperking_input" placeholder="Voeg beperking toe" value={inputValue} maxlength="60" onChange={(e) => setInputValue(e.target.value)}/>
           </div>
           {/* <div id={styles.ingevoerdeBeperkingen} className="ingevoerdeBeperkingen">
             <ul>
@@ -189,7 +189,7 @@ const [inputValue2, setInputValue2] = useState('');
           <div id={styles.ingevoerdeBeperkingen} className="ingevoerdeBeperkingen">
             <ul>
               {beperkingen.map((item, index) => (
-                <button key={index} id={styles.selectedbeperking} name={item.type} onClick={() => RemoveBeperking(item)}>
+                <button aria-label={"Beperking: " + item.type + ". Klik om weg te halen"} key={index} id={styles.selectedbeperking} name={item.type} onClick={() => RemoveBeperking(item)}>
                   {item.type}
                 </button>
               ))}
@@ -197,13 +197,13 @@ const [inputValue2, setInputValue2] = useState('');
           </div>
 
           <div id={styles.hulpmiddelinvoerdiv}>
-            <button id={styles.addhulpmiddel} onClick={addhulpmiddelToList}>+</button>
-            <input type="text" id={styles.hulpmiddel_input} className="hulpmiddel_input" placeholder="Voeg hulpmiddel toe" value={inputValue2} maxlength="60" onChange={(f) => setInputValue2(f.target.value)}/>
+            <button aria-label="Knop, voeg ingevoerde hulpmiddel toe" id={styles.addhulpmiddel} onClick={addhulpmiddelToList}>+</button>
+            <input aria-label="Hulpmiddel invoer" type="text" id={styles.hulpmiddel_input} className="hulpmiddel_input" placeholder="Voeg hulpmiddel toe" value={inputValue2} maxlength="60" onChange={(f) => setInputValue2(f.target.value)}/>
           </div>
           <div id={styles.ingevoerdeHulpmiddelen} className="ingevoerdeHulpmiddelen">
             <ul>
               {hulpmiddelen.map((item, index) => (
-                <button key={index} id={styles.selectedhulpmiddel} name={item.type} onClick={() => RemoveHulpmiddel(item)}>
+                <button aria-label={"Hulpmiddel: " + item.type + ". Klik hier om weg te halen"} key={index} id={styles.selectedhulpmiddel} name={item.type} onClick={() => RemoveHulpmiddel(item)}>
                   {item.type}
                 </button>
               ))}
@@ -213,50 +213,50 @@ const [inputValue2, setInputValue2] = useState('');
           <div>
             <h2 id={styles.checkboxTitle}>Participatie Type Onderzoeken</h2>
             <label>
-              <input id={styles.checkbox1} type="checkbox" name="checkbox1" checked={checkedItems.checkbox1 || false} onChange={handleCheckboxChange}/>Interviews</label>
+              <input aria-label="Checkbox voor Interviews" id={styles.checkbox1} type="checkbox" name="checkbox1" checked={checkedItems.checkbox1 || false} onChange={handleCheckboxChange}/>Interviews</label>
             <br />
             <label>
-              <input id={styles.checkbox2} type="checkbox" name="checkbox2" checked={checkedItems.checkbox2 || false} onChange={handleCheckboxChange}/>Groepsgresprekken</label>
+              <input aria-label="Checkbox voor Groepsgesprekken" id={styles.checkbox2} type="checkbox" name="checkbox2" checked={checkedItems.checkbox2 || false} onChange={handleCheckboxChange}/>Groepsgresprekken</label>
             <br />
             <label>
-              <input id={styles.checkbox3} type="checkbox" name="checkbox3" checked={checkedItems.checkbox3 || false} onChange={handleCheckboxChange}/>Online Onderzoeken</label>
+              <input aria-label="Checkbox voor Online Onderzoeken" id={styles.checkbox3} type="checkbox" name="checkbox3" checked={checkedItems.checkbox3 || false} onChange={handleCheckboxChange}/>Online Onderzoeken</label>
             <br />
             <label>
-              <input id={styles.checkbox4} type="checkbox" name="checkbox4" checked={checkedItems.checkbox4 || false} onChange={handleCheckboxChange}/>Engelstalige Onderzoeken</label>
+              <input aria-label="Checkbox voor Engelstalige Onderzoeken" id={styles.checkbox4} type="checkbox" name="checkbox4" checked={checkedItems.checkbox4 || false} onChange={handleCheckboxChange}/>Engelstalige Onderzoeken</label>
           </div>
 
           <div>
             <h2 id={styles.benaderingTitle}>Voorkeur Benadering</h2>
             <label>
-              <input id={styles.benader_option1} type="radio" name="benadering" value="benader_option1" checked={selectedOption === "benader_option1"} onChange={handleBenaderingOptionChange}/>Telefonisch
+              <input aria-label="Voorkeur: Telefonisch benadering" id={styles.benader_option1} type="radio" name="benadering" value="benader_option1" checked={selectedOption === "benader_option1"} onChange={handleBenaderingOptionChange}/>Telefonisch
             </label>
             <br />
             <label>
-              <input id={styles.benader_option2} type="radio" name="benadering" value="benader_option2" checked={selectedOption === "benader_option2"} onChange={handleBenaderingOptionChange}/>Alleen via Portal
+              <input aria-label="Voorkeur: Alleen via Portal benaderd worden" id={styles.benader_option2} type="radio" name="benadering" value="benader_option2" checked={selectedOption === "benader_option2"} onChange={handleBenaderingOptionChange}/>Alleen via Portal
             </label>
           </div>
 
           <div>
             <h2 id={styles.commercieelTitle}>Benaderd worden door Commerciële Partijen</h2>
             <label>
-              <input id={styles.commercieel_option1} type="radio" name="commercieleBenadering" value="commercieel_option1" checked={selectedCommercieleOption === "commercieel_option1"} onChange={handleCommercieelOptionChange}/>Ja
+              <input aria-label="Voorkeur: Benaderd worden door Commerciële Partijen op Ja" id={styles.commercieel_option1} type="radio" name="commercieleBenadering" value="commercieel_option1" checked={selectedCommercieleOption === "commercieel_option1"} onChange={handleCommercieelOptionChange}/>Ja
             </label>
             <br />
             <label>
-              <input id={styles.commercieel_option2} type="radio" name="commercieleBenadering" value="commercieel_option2" checked={selectedCommercieleOption === "commercieel_option2"} onChange={handleCommercieelOptionChange}/>Nee
+              <input aria-label="Voorkeur: Benaderd worden door Commerciële Partijen op Nee" id={styles.commercieel_option2} type="radio" name="commercieleBenadering" value="commercieel_option2" checked={selectedCommercieleOption === "commercieel_option2"} onChange={handleCommercieelOptionChange}/>Nee
             </label>
           </div>
 
           <div id={styles.password_blok}>
             <h3 id={styles.password_text}>Password:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.password_input}/>
+            <input aria-label="Password invoer" placeholder="" class={styles.input} type="text" id={styles.password_input}/>
           </div>
           <div id={styles.confirmpassword_blok}>
             <h3 id={styles.confirmpassword_text}>Confrim Password:</h3>
-            <input placeholder="" class={styles.input} type="text" id={styles.confirmpassword_input}/>
+            <input aria-label="Herhaal password invoer" placeholder="" class={styles.input} type="text" id={styles.confirmpassword_input}/>
           </div>
-          <button id={styles.register_button}>Registreer</button>
-          <p id={styles.loginquestion}>Al geregistreerd? <a href="/Googlelogin" id={styles.loginquestion}>Log In</a></p>
+          <button aria-label="Registreer knop" id={styles.register_button}>Registreer</button>
+          <p id={styles.loginquestion}>Al geregistreerd? <a aria-label="Al geregistreerd? Link naar de login page" href="/Googlelogin" id={styles.loginquestion}>Log In</a></p>
         </div>
       </div>
         <ContactGegevens>

@@ -39,7 +39,7 @@ export default function GedetaileerdOnderzoek() {
               <p id={styles.text4}>Volle beschrijving: {volle_beschrijving}</p>
               <p id={styles.text5}>Doelgroep: {doelgroep}</p>
               <li id={styles.menuButton} key={id} name={"Button" + naam} class={styles.navbar__item}>
-                <a id={styles.aanmelden} href={link} class={styles.button}>Aanmelden</a>
+                <a aria-label="Aanmelden bij onderzoek" id={styles.aanmelden} href={link} class={styles.button}>Aanmelden</a>
               </li>
             </div>
           </div>

@@ -57,7 +57,7 @@ export default function GoogleLogin(){
 
 
         <div id="google_login" className={styles.google_login}>
-          <div id="signInDiv" alt="Google Login"></div>
+          <div aria-label="Login with Google" id="signInDiv" alt="Google Login"></div>
           {Object.keys(user).length !== 0 && (
             <button onClick={(e) => handleSignOutEvent(e)}>log uit</button>
           )}
@@ -79,13 +79,13 @@ export default function GoogleLogin(){
         <h3 id={styles.or_text}>OR</h3>
           <div id={styles.username_blok}>
             <h3 id={styles.username_text}>Username:</h3>
-            <input type="text" id={styles.username_input} autoFocus/>
+            <input aria-label="Loginveld voor Username" type="text" id={styles.username_input} autoFocus/>
           </div>
           <div id={styles.password_blok}>
             <h3 id={styles.password_text}>Password:</h3>
-            <input type="text" id={styles.password_input}/>
+            <input aria-label="Loginveld voor Password" type="text" id={styles.password_input}/>
           </div>
-          <button href="/" id={styles.login_button}>Login</button>
+          <button aria-label="Loginknop" href="/" id={styles.login_button}>Login</button>
         </div>
       </div>
         <ContactGegevens>

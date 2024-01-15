@@ -76,7 +76,7 @@ export default function UserHome() {
                 {menuButtons.map((item) => (
                   // <button id={styles.menuButton} key={item.id} name={"Button" + item.name} onClick={SwitchURL(item.link, item)}>{item.name}</button>
                   <li id={styles.menuButton} key={item.id} name={"Button" + item.name} class={styles.navbar__item}>
-                    <a href={item.link} class={styles.button}>{item.name}</a>
+                    <a aria-label={"Menuknop voor " + item.name} href={item.link} class={styles.button}>{item.name}</a>
                   </li>
                 ))}
               </ul>

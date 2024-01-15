@@ -70,12 +70,12 @@ export default function Onderzoeken() {
             <input id={styles.searchbar} type="text" placeholder="Search..." value={searchInput} onChange={(e) => setSearchInput(e.target.value)}/>
               <ul>
                 {filteredMenuButtons.map((item) => (
-                  <div id={styles.blok_2}>
+                  <div aria-label={"Onderzoek van " + item.name + ", die gaat over " + item.titel} id={styles.blok_2}>
                     <h1 id={styles.text2_titel}>{item.titel}</h1>
                     <p id={styles.text2}>{item.beschrijving}</p>
                     <p id={styles.text3}>Locatie: {item.locatie}</p>
                     <li id={styles.menuButton} key={item.id} name={"Button" + item.name} class={styles.navbar__item}>
-                      <a id={styles.leesmeer} href={item.link} class={styles.button}>Lees Meer</a>
+                      <a aria-label={"Lees meer over het onderzoek van " + item.name} id={styles.leesmeer} href={item.link} class={styles.button}>Lees Meer</a>
                     </li>
                   </div>
                 ))}
