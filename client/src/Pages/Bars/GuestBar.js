@@ -5,7 +5,7 @@ export default function GuestBar() {
   return (
     <nav class={styles.navbar}>
         <div class={styles.navbar__container}>
-            <a aria-label="Logo met link naar homepage" href="/" id={styles.navbar__logo}><img src="/Images/logo_accessibility.png " alt="Accessibility Logo"/></a>
+            <a aria-label="Logo, homepage link" href="/" id={styles.navbar__logo}><img src="/Images/logo_accessibility.png " alt="Accessibility Logo"/></a>
             <div class={styles.navbar__toggle} id={styles.mobile_menu}>
                 <span class={styles.bar}></span>
                 <span class={styles.bar}></span>

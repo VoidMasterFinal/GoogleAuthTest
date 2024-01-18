@@ -25,7 +25,7 @@ export default function Home() {
         <p id={styles.chat_text}>Live Chats</p>
         <p id={styles.info_text}>Inzichtgevende Informatie</p>
       </div>
-      <h1 id={styles.voor_bedrijven}>Voor Bedrijven</h1>
+      <p id={styles.voor_bedrijven}>Voor Bedrijven</p>
         <div id={styles.blok_2}>
           <img id={styles.business_man} src="/Images/happy-business-man.png" alt="Blije Zakenman"/>
           <p id={styles.text2}>Richt gratis onderzoeken op met ervaringsdeskundigen en verzamel klikgedrag op uw website.<br></br><br></br>Chat met de ervaringsdeskundigen en verbeter de accessibility van uw website.</p>

@@ -59,6 +59,12 @@ const [inputValue2, setInputValue2] = useState('');
         }
       }
 
+      // function addcustombeperkingToList(name) {
+      //   console.log('Adding custom beperking to list:', name);
+      //   setBeperkingen(prevBeperkingen => [...prevBeperkingen, name]);
+      //   setInputValue('');
+      // }
+
       function addhulpmiddelToList() {
         if (inputValue2) {
           setHulpmiddelen(prevHulpmiddelen => [...prevHulpmiddelen, { type: inputValue2 }]);
@@ -84,6 +90,76 @@ const [inputValue2, setInputValue2] = useState('');
         const updatedHulpmiddelen = hulpmiddelen.filter(item => item.type !== hulpmiddel.type && item.type !== "");
         setHulpmiddelen(updatedHulpmiddelen);
       }
+
+      // function myFunction() {
+      //   document.getElementById("myDropdown").classList.toggle("show");
+      // }
+      
+      // // Close the dropdown if the user clicks outside of it
+      // window.onclick = function(event) {
+      //   if (!event.target.matches('.dropbtn')) {
+      //     var dropdowns = document.getElementsByClassName("dropdown-content");
+      //     var i;
+      //     for (i = 0; i < dropdowns.length; i++) {
+      //       var openDropdown = dropdowns[i];
+      //       if (openDropdown.classList.contains('show')) {
+      //         openDropdown.classList.remove('show');
+      //       }
+      //     }
+      //   }
+      // }
+
+  //     const [selectedOption1, setSelectedOption1] = useState('');
+  // const [selectedOption2, setSelectedOption2] = useState('');
+
+  // const handleDropdownChange1 = (event) => {
+  //   // setSelectedOption1(event.target.value);
+  //   const selectedValue = event.target.value;
+  //   if (selectedValue) {
+  //     addcustombeperkingToList(String(selectedValue));
+  //     setSelectedOption(selectedValue);
+  //   }
+  // };
+
+  // const handleDropdownChange2 = (event) => {
+  //   setSelectedOption2(event.target.value);
+  // };
+
+  // const menuButtons = [
+  // ];
+
+  // const filteredMenuButtons1 = menuButtons.filter(item => {
+  //   const lowercasedSearchInput = selectedOption1.toLowerCase();
+  //   return (
+  //     (item.titel && item.titel.toLowerCase().includes(lowercasedSearchInput)) ||
+  //     (item.beschrijving && item.beschrijving.toLowerCase().includes(lowercasedSearchInput)) ||
+  //     (item.locatie && item.locatie.toLowerCase().includes(lowercasedSearchInput))
+  //   );
+  // });
+
+  // const filteredMenuButtons2 = menuButtons.filter(item => {
+  //   const lowercasedSearchInput = selectedOption2.toLowerCase();
+  //   return (
+  //     (item.titel && item.titel.toLowerCase().includes(lowercasedSearchInput)) ||
+  //     (item.beschrijving && item.beschrijving.toLowerCase().includes(lowercasedSearchInput)) ||
+  //     (item.locatie && item.locatie.toLowerCase().includes(lowercasedSearchInput))
+  //   );
+  // });
+
+  // // Define the options for the dropdowns
+  // const dropdownOptions1 = [
+  //   { label: 'All', value: '' },
+  //   { label: 'Option 1', value: 'option1' },
+  //   { label: 'Option 2', value: 'option2' },
+  //   // Add more options as needed
+  // ];
+
+  // const dropdownOptions2 = [
+  //   { label: 'All', value: '' },
+  //   { label: 'Option A', value: 'optionA' },
+  //   { label: 'Option B', value: 'optionB' },
+  //   // Add more options as needed
+  // ];
 
       const [selectedOption, setSelectedOption] = useState(null);
       const handleBenaderingOptionChange = (event) => {
@@ -151,33 +227,54 @@ const [inputValue2, setInputValue2] = useState('');
         {/* <hr id={styles.or_line}></hr> */}
         {/* <h3 id={styles.or_text}>OR</h3> */}
           <div id={styles.voornaam_blok}>
-            <h3 id={styles.voornaam_text}>Voornaam:</h3>
-            <input aria-label="Voornaam invoer" placeholder="" class={styles.input} type="text" id={styles.voornaam_input} autoFocus/>
+            <label id={styles.voornaam_text} for={styles.voornaam_input}>Voornaam:<br></br>
+              <input aria-label="Voornaam invoer" placeholder="" class={styles.input} type="text" id={styles.voornaam_input} autoFocus/>    
+            </label>        
           </div>
           <div id={styles.achternaam_blok}>
-            <h3 id={styles.achternaam_text}>Achternaam:</h3>
-            <input aria-label="Achternaam invoer" placeholder="" class={styles.input} type="text" id={styles.achternaam_input}/>
+            <label id={styles.achternaam_text} for={styles.achternaam_input}>Achternaam:<br></br>
+              <input aria-label="Achternaam invoer" placeholder="" class={styles.input} type="text" id={styles.achternaam_input}/>
+            </label>
           </div>
           <div id={styles.username_blok}>
-            <h3 id={styles.username_text}>Username:</h3>
-            <input aria-label="Username invoer" placeholder="" class={styles.input} type="text" id={styles.username_input}/>
+            <label id={styles.username_text} for={styles.username_input}>Username:<br></br>
+              <input aria-label="Username invoer" placeholder="" class={styles.input} type="text" id={styles.username_input}/>
+            </label>
           </div>
           <div id={styles.email_blok}>
-            <h3 id={styles.email_text}>Email:</h3>
-            <input aria-label="Email invoer" placeholder="" class={styles.input} type="text" id={styles.email_input}/>
+            <label id={styles.email_text} for={styles.email_input}>Email:<br></br>
+              <input aria-label="Email invoer" placeholder="" class={styles.input} type="text" id={styles.email_input}/>
+            </label>
           </div>
           <div id={styles.telnr_blok}>
-            <h3 id={styles.telnr_text}>Telefoonnummer:</h3>
-            <input aria-label="Telefoonnummer invoer" placeholder="" class={styles.input} type="text" id={styles.telnr_input}/>
+            <label id={styles.telnr_text} for={styles.telnr_input}>Telefoonnummer:<br></br>
+              <input aria-label="Telefoonnummer invoer" placeholder="" class={styles.input} type="text" id={styles.telnr_input}/>
+            </label>
           </div>
           <div id={styles.postcode_blok}>
-            <h3 id={styles.postcode_text}>Postcode:</h3>
-            <input aria-label="Postcode invoer" placeholder="" class={styles.input} type="text" id={styles.postcode_input}/>
+            <label id={styles.postcode_text} for={styles.postcode_input}>Postcode:<br></br>
+              <input aria-label="Postcode invoer" placeholder="" class={styles.input} type="text" id={styles.postcode_input}/>
+            </label>
           </div>
 
           <div id={styles.beperkinginvoerdiv}>
-            <button aria-label="Knop, voeg ingevoerde beperking toe" id={styles.addbeperking} onClick={addbeperkingToList}>+</button>
+            {/* <div class="dropdown">
+              <button onclick={myFunction()} class="dropbtn">Dropdown</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div> */}
+            {/* <select value={selectedOption1} onChange={handleDropdownChange1}>
+              {dropdownOptions1.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select> */}
             <input aria-label="Beperking invoer" type="text" id={styles.beperking_input} className="beperking_input" placeholder="Voeg beperking toe" value={inputValue} maxlength="60" onChange={(e) => setInputValue(e.target.value)}/>
+            <button aria-label="Knop, voeg ingevoerde beperking toe" id={styles.addbeperking} onClick={addbeperkingToList}>+</button>
           </div>
           {/* <div id={styles.ingevoerdeBeperkingen} className="ingevoerdeBeperkingen">
             <ul>
@@ -197,8 +294,15 @@ const [inputValue2, setInputValue2] = useState('');
           </div>
 
           <div id={styles.hulpmiddelinvoerdiv}>
-            <button aria-label="Knop, voeg ingevoerde hulpmiddel toe" id={styles.addhulpmiddel} onClick={addhulpmiddelToList}>+</button>
+            {/* <select value={selectedOption2} onChange={handleDropdownChange2}>
+              {dropdownOptions2.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select> */}
             <input aria-label="Hulpmiddel invoer" type="text" id={styles.hulpmiddel_input} className="hulpmiddel_input" placeholder="Voeg hulpmiddel toe" value={inputValue2} maxlength="60" onChange={(f) => setInputValue2(f.target.value)}/>
+            <button aria-label="Knop, voeg ingevoerde hulpmiddel toe" id={styles.addhulpmiddel} onClick={addhulpmiddelToList}>+</button>
           </div>
           <div id={styles.ingevoerdeHulpmiddelen} className="ingevoerdeHulpmiddelen">
             <ul>
@@ -248,12 +352,14 @@ const [inputValue2, setInputValue2] = useState('');
           </div>
 
           <div id={styles.password_blok}>
-            <h3 id={styles.password_text}>Password:</h3>
-            <input aria-label="Password invoer" placeholder="" class={styles.input} type="text" id={styles.password_input}/>
+            <label id={styles.password_text} for={styles.password_input}>Password:<br></br>
+              <input aria-label="Password invoer" placeholder="" class={styles.input} type="text" id={styles.password_input}/>
+            </label>
           </div>
           <div id={styles.confirmpassword_blok}>
-            <h3 id={styles.confirmpassword_text}>Confrim Password:</h3>
-            <input aria-label="Herhaal password invoer" placeholder="" class={styles.input} type="text" id={styles.confirmpassword_input}/>
+            <label id={styles.confirmpassword_text} for={styles.confirmpassword_input}>Confirm Password:<br></br>
+              <input aria-label="Herhaal password invoer" placeholder="" class={styles.input} type="text" id={styles.confirmpassword_input}/>
+            </label>
           </div>
           <button aria-label="Registreer knop" id={styles.register_button}>Registreer</button>
           <p id={styles.loginquestion}>Al geregistreerd? <a aria-label="Al geregistreerd? Link naar de login page" href="/Googlelogin" id={styles.loginquestion}>Log In</a></p>

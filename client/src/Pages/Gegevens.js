@@ -40,7 +40,7 @@ export default function Gegevens() {
               <p id={styles.text2}>Password: {password}</p>
               <br></br>
               <ul>
-                <h1 id={styles.text3}>Beperkingen:</h1>
+                <p id={styles.text3}>Beperkingen:</p>
                 <div aria-label="Beperkingen" id={styles.blok_2}>
                   {beperkingen.map((item) => (
                     <h1 id={styles.text5}>{item}</h1>
@@ -49,7 +49,7 @@ export default function Gegevens() {
               </ul>
               <br></br>
               <ul>
-                <h1 id={styles.text3}>Hulpmiddelen:</h1>
+                <p id={styles.text3}>Hulpmiddelen:</p>
                 <div aria-label="Hulpmiddelen" id={styles.blok_2}>
                   {hulpmiddelen.map((item) => (
                     <h1 id={styles.text5}>{item}</h1>
@@ -58,7 +58,7 @@ export default function Gegevens() {
               </ul>
               <br></br>
               <ul>
-                <h1 id={styles.text3}>Deelname Onderzoeken:</h1>
+                <p id={styles.text3}>Deelname Onderzoeken:</p>
                 <div aria-label="Deelname aan type onderzoeken" id={styles.blok_2}>
                   {deelnameonderzoeken.map((item) => (
                     <h1 id={styles.text5}>{item}</h1>

@@ -71,7 +71,7 @@ export default function Onderzoeken() {
               <ul>
                 {filteredMenuButtons.map((item) => (
                   <div aria-label={"Onderzoek van " + item.name + ", die gaat over " + item.titel} id={styles.blok_2}>
-                    <h1 id={styles.text2_titel}>{item.titel}</h1>
+                    <p id={styles.text2_titel}>{item.titel}</p>
                     <p id={styles.text2}>{item.beschrijving}</p>
                     <p id={styles.text3}>Locatie: {item.locatie}</p>
                     <li id={styles.menuButton} key={item.id} name={"Button" + item.name} class={styles.navbar__item}>

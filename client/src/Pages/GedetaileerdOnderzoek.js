@@ -30,7 +30,7 @@ export default function GedetaileerdOnderzoek() {
         <div id={styles.blokken}>
           <div id={styles.blok_1} name="blok_1">
             <div id={styles.blok_2}>
-              <h1 id={styles.text2_titel}>Titel: {titel}</h1>
+              <p id={styles.text2_titel}>Titel: {titel}</p>
               <p id={styles.text2}>Korte beschrijving: {beschrijving}</p>
               <p id={styles.text3}>Locatie: {locatie}</p>
               <p id={styles.text3}>Uitkering: {uitkering}</p>

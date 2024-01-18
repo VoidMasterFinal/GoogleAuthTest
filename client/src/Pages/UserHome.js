@@ -83,7 +83,7 @@ export default function UserHome() {
             </div>
           </div>
           <div id={styles.blok_2}>
-            <h1 id={styles.text2_titel}>Nieuws</h1>
+            <p id={styles.text2_titel}>Nieuws</p>
             <p id={styles.text2}>Geen nieuws gevonden.</p>
           </div>
         </div>

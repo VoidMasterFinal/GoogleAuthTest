@@ -76,14 +76,16 @@ export default function GoogleLogin(){
         </div>
 
         <hr id={styles.or_line}></hr>
-        <h3 id={styles.or_text}>OR</h3>
+        <p id={styles.or_text}>OR</p>
           <div id={styles.username_blok}>
-            <h3 id={styles.username_text}>Username:</h3>
-            <input aria-label="Loginveld voor Username" type="text" id={styles.username_input} autoFocus/>
+            <label id={styles.username_text} for={styles.username_input}>Username:<br></br>
+              <input aria-label="Loginveld voor Username" type="text" id={styles.username_input} autoFocus/>
+            </label>
           </div>
           <div id={styles.password_blok}>
-            <h3 id={styles.password_text}>Password:</h3>
-            <input aria-label="Loginveld voor Password" type="text" id={styles.password_input}/>
+            <label id={styles.password_text} for={styles.password_input}>Password:<br></br>
+              <input aria-label="Loginveld voor Password" type="text" id={styles.password_input}/>
+            </label>
           </div>
           <button aria-label="Loginknop" href="/" id={styles.login_button}>Login</button>
         </div>

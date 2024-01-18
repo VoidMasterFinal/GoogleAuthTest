@@ -53,6 +53,7 @@
 }
 
 #username_input {
+    margin-top: 1.5%;
     width: 60%;
     height: 7vh;
     border-radius: 45px;
@@ -67,6 +68,7 @@
 }
 
 #password_input {
+    margin-top: 1.5%;
     width: 60%;
     height: 7vh;
     border-radius: 45px;
