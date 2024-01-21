@@ -5,6 +5,11 @@ import Register from './Pages/Register'
 import Onderzoeken from './Pages/Onderzoeken'
 import GedetaileerdOnderzoek from './Pages/GedetaileerdOnderzoek'
 import Gegevens from './Pages/Gegevens'
+import BedrijfsHome from './Pages/BedrijfsHome'
+import OnderzoekOpstellen from './Pages/OnderzoekOpstellen'
+import EigenOnderzoeken from './Pages/EigenOnderzoeken'
+import BeheerdersHome from './Pages/BeheerdersHome'
+import GedetaileerdOnderzoekMOD from './Pages/GedetaileerdOnderzoekMOD'
 
 const AppRoutes = [
   {
@@ -34,8 +39,27 @@ const AppRoutes = [
   {
     path: "/Gegevens",
     element: <Gegevens />,
+  },
+  {
+    path: "/BedrijfsHome",
+    element: <BedrijfsHome />,
+  },
+  {
+    path: "/OnderzoekOpstellen",
+    element: <OnderzoekOpstellen />
+  },
+  {
+    path: "/EigenOnderzoeken",
+    element: <EigenOnderzoeken />
+  },
+  {
+    path: "/BeheerdersHome",
+    element: <BeheerdersHome />
+  },
+  {
+    path: "/OnderzoekMOD",
+    element: <GedetaileerdOnderzoekMOD />
   }
-
 ];
 
 export default AppRoutes;

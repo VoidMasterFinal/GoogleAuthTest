@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import GoogleLogin from './GoogleLogin';
-import styles from  '../styles/Onderzoeken.module.css';
+import styles from  '../styles/EigenOnderzoeken.module.css';
 import GuestBar from './Bars/GuestBar';
 import UserBar from './Bars/UserBar';
 import ContactGegevens from './Bars/ContactGegevensBar';
@@ -14,7 +14,7 @@ export default function Onderzoeken() {
     {
       id: 'fromsoft',
       name: 'fromsoft', 
-      link: '/Onderzoek',
+      link: '/OnderzoekMod',
       titel: 'FromSoft Games website accessibility',
       beschrijving: 'Test onze website op accessibility, alle feedback is gevraagd.',
       locatie: 'Online'
@@ -22,25 +22,10 @@ export default function Onderzoeken() {
     {
       id: 'puzzelbv',
       name: 'puzzelbv', 
-      link: '/Onderzoek',
+      link: '/OnderzoekMod',
       titel: 'PuzzelmakersBV Gebouw Toegankelijkheid',
       beschrijving: 'Graag langskomen om alle doorgangen en gangen te testen. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
       locatie: 'Steelweg 38, Zuid Holland'
-    },
-    {
-      id: 'ChatsButton',
-      name: 'Jouw Chats',
-      link: '/Chats',
-    },
-    {
-      id: 'GegevensButton',
-      name: 'Gegevens (Wijzigen)',
-      link: '/gegevens',
-    },
-    {
-      id: 'LogoutButton',
-      name: 'Log Uit',
-      link: '/logout'
     }
   ];
   let divheight = menuButtons.length * 10;
@@ -64,7 +49,7 @@ export default function Onderzoeken() {
       </UserBar>
       <img id={styles.wachtkamer_img} src="/Images/wachtkamer_plant.png" alt="Wachtkamer Achtergrond"/>
       <div>
-        <h1 id={styles.over_ons}>Onderzoeken</h1>
+        <h1 id={styles.over_ons}>Eigen Onderzoeken</h1>
         <div id={styles.blokken}>
           <div id={styles.blok_1} name="blok_1">
             <input id={styles.searchbar} aria-label='Zoekbar' type="text" placeholder="Search..." value={searchInput} onChange={(e) => setSearchInput(e.target.value)}/>
